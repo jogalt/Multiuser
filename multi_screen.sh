@@ -27,9 +27,9 @@ select session_option in "${option[@]}"; do
 		"Join")
 			echo -e "What's the multiuser screen name?"
 			read case_join_name
-			echo -e "Make sure the screen ownder has added you to the acl.."
+			echo -e "Make sure the screen owner has added you to the acl.."
 			sleep 2
-			echo -e "Attempting to add you to the shared screen" |  sudo screen -x $case_join_name
+			echo -e "Run the following command: sudo screen -x $case_join_name "
 			sleep 1
 			exit
 			;;
