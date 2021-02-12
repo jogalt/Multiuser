@@ -1,6 +1,6 @@
 #!/bin/bash
 echo -e "\n"
-### note, reattach screen screen -d -r ####.$session_name
+### note, reattach zombie screen: screen -d -r ####.$session_name
 ### kill screen with Ctrl-a + k
 ############################################################
 ##                                                        ##
