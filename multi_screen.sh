@@ -29,7 +29,7 @@ select session_option in "${option[@]}"; do
 			read case_join_name
 			echo -e "Make sure the screen ownder has added you to the acl.."
 			sleep 2
-			echo -e "Attempting to add you to the shared screen" |  sudo screen -x $(whoami)/$case_join_name
+			echo -e "Attempting to add you to the shared screen" |  sudo screen -x $case_join_name
 			sleep 1
 			exit
 			;;
