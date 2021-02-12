@@ -98,8 +98,10 @@ select session_option in "${option[@]}"; do
 			exit
 			;;
 	esac
-			echo -e "Joining the session you created."
+			### Want to join the multi-screen from here but can't
+			#echo -e "Joining the session you created."
 			sleep 1
-			echo -e "sudo screen -x $session_name" | sudo screen -x $session_name
+			echo -e "Run the following command: sudo screen -x $session_name "
+			#echo -e "sudo screen -x $session_name" | sudo screen -x $session_name
 			exit
 done
