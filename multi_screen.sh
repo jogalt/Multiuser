@@ -101,7 +101,7 @@ select session_option in "${option[@]}"; do
 			### Want to join the multi-screen from here but can't
 			#echo -e "Joining the session you created."
 			sleep 1
-			echo -e "Run the following command: sudo screen -x $session_name "
+			echo -e "Now you, $(whoami), need to run the following command: sudo screen -x $session_name "
 			#echo -e "sudo screen -x $session_name" | sudo screen -x $session_name
 			exit
 done
